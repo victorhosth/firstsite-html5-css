@@ -55,12 +55,13 @@ body{
 
 header{
     z-index: 999;
-    background-color: rgba(16, 36, 94, 0.452);
+    background: linear-gradient(342deg, #00243b, #042c45);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100px;
     margin-bottom: -100px;
+    box-shadow: 0px 5px 20px #13293d4a;
 
 
 }
@@ -186,7 +187,7 @@ header .logo img{
     justify-content: center;
 }
 #conteudo1 .container{
-    padding: 30px 0px;
+    padding: 30px 15px;
 }
 
 .conteudo1_titulo{
@@ -582,18 +583,98 @@ header .logo img{
         height: 700px;
     }
 }
+@media (min-width:651px){
+    .menu .menuMobile{
+        display: none !important;
+    }
+    header .menu ul {
+        display: flex !important;
+    }
 
+}
 @media (max-width:650px){
     header .menu ul {
-        display: block;
-            }
-    
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 0px 5px 20px #13293d4a;
+        padding: 20px 0px;
+        display: none;
+        width: 100%;
+        top:84px;
+        left: 0px;
+        background-color: var(--back-azul-claro);
+        position: absolute;
+         }
+    header .menu a{
+        color: var(--azuldark);
+        margin: 10px 0px 10px 20px;
+
+    }
+        
+        header {
+            margin-bottom: 0px;
+            position: fixed;
+            width: 100%;
+        }
+        header .menu a:hover {
+            border-radius: 5px;
+            background-color: rgba(158, 65, 65, 0);
+            color: var(--azuldark);
+                }
 
 
 }
-    
+.menu .menuMobile{
+    background-color: rgba(0, 0, 0, 0.233);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 25px;
+    padding: 5px 10px;
+    width:30px;
+    height: 35px;
+}
+.menu .mm_line{
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #e0f1f2;
+}
+.menu .menuMobilex{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.233);
+
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    padding: 5px 10px;
+    width:30px;
+    height: 35px;
+}
+.menu .mm_linex{
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #e0f1f2;
+}
+.menu .mm_linex1{
+    rotate: 45deg;
+}
+.menu .mm_linex2{
+    rotate: -45deg;
+    margin-top: -3px;
+}
+@media (max-width:425px){
+    #banner_header .headline h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
 
 
+}
 
 
 
