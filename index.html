@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <meta name="viewport" content="width=device-width, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="assets/css/template.css">
     <title>Digital Hosth - Agência digital</title>        
     <script type="text/javascript">
         window.onload = function (){
             document.querySelector(".menuMobile").addEventListener("click", function(){
-                if(document.querySelector(".menu ul").style.display == 'none') {
+                if(document.querySelector(".menu ul").style.display == '') {
                     document.querySelector(".menu ul").style.display = 'block';
-
+                } else {
+                    if(document.querySelector(".menu ul").style.display == 'none') {
+                    document.querySelector(".menu ul").style.display = 'block';
                 } else {
                     document.querySelector(".menu ul").style.display = 'none';
+                }
                 }
             });
         };  
@@ -31,11 +34,7 @@
             </div>
             <nav>
                 <div class="menu">
-                    <div class="menuMobilex">
-                        <div class="mm_linex mm_linex1"></div>
-                        <div class="mm_linex mm_linex2"></div>
 
-                    </div>
                     <div class="menuMobile">
                         <div class="mm_line mm_line1"></div>
                         <div class="mm_line mm_line2"></div>
