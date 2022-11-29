@@ -73,7 +73,7 @@ header .menu ul{
 }
 
 header .menu li{
-    margin: 10px 20px;
+    margin: 20px 15px;
 }
 header .menu a{
     display: block;
@@ -362,7 +362,7 @@ header .logo img{
     flex-direction: column;
 }
 #conteudo2 .container{
-    padding: 50px 10px;
+    padding: 50px 15px;
     flex-direction: column;
 }
 
@@ -596,10 +596,9 @@ header .logo img{
     header .menu ul {
         border-radius: 0px 0px 5px 5px;
         box-shadow: 0px 5px 20px #13293d4a;
-        padding: 20px 0px;
         display: none;
         width: 100%;
-        top:84px;
+        top:54px;
         left: 0px;
         background-color: var(--back-azul-claro);
         position: absolute;
@@ -609,17 +608,22 @@ header .logo img{
         margin: 10px 0px 10px 20px;
 
     }
-        
-        header {
-            margin-bottom: 0px;
-            position: fixed;
-            width: 100%;
-        }
-        header .menu a:hover {
-            border-radius: 5px;
-            background-color: rgba(158, 65, 65, 0);
-            color: var(--azuldark);
-                }
+    
+    header {
+        margin-bottom: 0px;
+        position: fixed;
+        width: 100%;
+        min-height: 70px;
+    }
+    header .menu a:hover {
+        border-radius: 5px;
+        background-color: rgba(158, 65, 65, 0);
+        color: var(--azuldark);
+            }
+    header .logo img {
+        max-width: 135px;
+        margin-left: 15px;
+    }
 
 
 }
@@ -631,42 +635,18 @@ header .logo img{
     justify-content: space-around;
     align-items: center;
     margin-right: 25px;
-    padding: 5px 10px;
+    padding: 5px 6px;
     width:30px;
-    height: 35px;
+    height: 25px;
 }
 .menu .mm_line{
-    width: 35px;
+    width: 25px;
     height: 3px;
     border-radius: 5px;
     background-color: #e0f1f2;
 }
-.menu .menuMobilex{
-    display: none;
-    background-color: rgba(0, 0, 0, 0.233);
 
-    flex-direction: column;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 25px;
-    padding: 5px 10px;
-    width:30px;
-    height: 35px;
-}
-.menu .mm_linex{
-    width: 35px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #e0f1f2;
-}
-.menu .mm_linex1{
-    rotate: 45deg;
-}
-.menu .mm_linex2{
-    rotate: -45deg;
-    margin-top: -3px;
-}
+
 @media (max-width:425px){
     #banner_header .headline h1 {
         font-size: 35px;
@@ -675,3 +655,11 @@ header .logo img{
 
 
 }
+
+
+
+
+
+
+
+
